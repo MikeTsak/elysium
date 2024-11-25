@@ -13,10 +13,11 @@ const MapComponent = () => {
     return areas.defaultColor;
   };
 
-  const getPopupContent = (name) => {
-    const info = popupInfo[name] || defaultPopupInfo;
+  const getPopupContent = (feature) => {
+    const areaName = feature.properties.name; // Using feature properties for the area name
+    const info = popupInfo[areaName] || defaultPopupInfo; // Access the popup info based on the area name
     return `
-      <b>${info.domainName}</b><br>
+      <b>${areaName}</b><br>
       <i>Owner:</i> ${info.ownerName}<br>
       <i>Email:</i> ${info.email}<br>
       <i>Claimed:</i> ${info.claim ? "Yes" : "No"}<br>
@@ -41,7 +42,7 @@ const MapComponent = () => {
     }
 
     // Popup with area details
-    layer.bindPopup(getPopupContent(areaName));
+    layer.bindPopup(getPopupContent(feature)); // Pass feature to getPopupContent
 
     // Highlight on hover
     layer.on({
