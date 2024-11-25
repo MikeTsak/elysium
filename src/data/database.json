@@ -1,0 +1,119 @@
+{
+    "areas": {
+      "darkRed": ["Υμηττός", "Πάρνηθα - Φυλή", "Πειραιάς"],
+      "blue": [
+        "Κολωνάκι - Λυκαβηττός",
+        "Εμπορικό Τρίγωνο - Σύνταγμα - Ζάππειο - Ακαδημία",
+        "Ψυρρή",
+        "Πλάκα - Μοναστηράκι",
+        "Παγκράτι - Μετς",
+        "Αμπελόκηποι - Γηροκομείο",
+        "Γουδή - Κατεχάκη",
+        "Αργυρούπολη - Ελληνικό",
+        "Κηφισιά - Ν. Ερυθραία - Εκάλη",
+        "Ζωγράφου - Ιλίσια - Καισαριανή"
+      ],
+      "defaultColor": "gray"
+    },
+    "popupInfo": {
+      "Υμηττός": {
+        "domainName": "Υμηττός",
+        "ownerName": "WereWolves(no-entry zone)",
+        "email": "N/A",
+        "claim": false,
+        "feedingGrounds": "N/A"
+      },
+      "Πάρνηθα - Φυλή": {
+        "domainName": "Πάρνηθα - Φυλή",
+        "ownerName": "WereWolves(no-entry zone)",
+        "email": "N/A",
+        "claim": false,
+        "feedingGrounds": "N/A"
+      },
+      "Πειραιάς": {
+        "domainName": "Πειραιάς",
+        "ownerName": "No-entry zone",
+        "email": "N/A",
+        "claim": false,
+        "feedingGrounds": 5
+      },
+      "Κολωνάκι - Λυκαβηττός": {
+        "domainName": "Κολωνάκι - Λυκαβηττός",
+        "ownerName": "Xanthos Schweitzer",
+        "email": "xanthosschweitzer@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 2
+      },
+      "Εμπορικό Τρίγωνο - Σύνταγμα - Ζάππειο - Ακαδημία": {
+        "domainName": "Εμπορικό Τρίγωνο",
+        "ownerName": "Αυλή του Άρχοντα",
+        "email": "tilemaxos@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 2
+      },
+      "Ψυρρή": {
+        "domainName": "Ψυρρή",
+        "ownerName": "Azrael",
+        "email": "azrael@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 1
+      },
+      "Πλάκα - Μοναστηράκι": {
+        "domainName": "Πλάκα - Μοναστηράκι",
+        "ownerName": "Mother Benedicta",
+        "email": "benedicta@vampire.gr",
+        "claim": false,
+        "feedingGrounds": 1
+      },
+      "Παγκράτι - Μετς": {
+        "domainName": "Παγκράτι - Μετς",
+        "ownerName": "Ουρανία Χρηστομάνου",
+        "email": "drsky@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 2
+      },
+      "Αμπελόκηποι - Γηροκομείο": {
+        "domainName": "Αμπελόκηποι - Γηροκομείο",
+        "ownerName": "Ελένη Κοσμίδου",
+        "email": "drkosmidou@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 2
+      },
+      "Γουδή - Κατεχάκη": {
+        "domainName": "Γουδή - Κατεχάκη",
+        "ownerName": "Θέμιδα Καλλίστη",
+        "email": "tkallisti@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 3
+      },
+      "Αργυρούπολη - Ελληνικό": {
+        "domainName": "Αργυρούπολη - Ελληνικό",
+        "ownerName": "Μιχάλης Καββαδίας",
+        "email": "Michael@vampire.gr ",
+        "claim": true,
+        "feedingGrounds": 5
+      },
+      "Κηφισιά - Ν. Ερυθραία - Εκάλη": {
+        "domainName": "Κηφισιά - Ν. Ερυθραία - Εκάλη",
+        "ownerName": "Καλίστρατος",
+        "email": "kalistratos@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 5
+      },
+      "Ζωγράφου - Ιλίσια - Καισαριανή": {
+        "domainName": "Ζωγράφου - Ιλίσια - Καισαριανή",
+        "ownerName": "Φίλιππος Λαγός",
+        "email": " flagos@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 4
+      }
+    },
+    "defaultPopupInfo": {
+      "domainName": "Unclaimed Area",
+      "ownerName": "None",
+      "email": "N/A",
+      "claim": false,
+      "feedingGrounds": 1
+    }
+  }
+  
