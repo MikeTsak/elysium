@@ -11,7 +11,9 @@
         "Γουδή - Κατεχάκη",
         "Αργυρούπολη - Ελληνικό",
         "Κηφισιά - Ν. Ερυθραία - Εκάλη",
-        "Ζωγράφου - Ιλίσια - Καισαριανή"
+        "Ζωγράφου - Ιλίσια - Καισαριανή",
+        "Βάθη - Εξάρχεια - Ομόνοια",
+        "Ακρόπολη και πέριξ"
       ],
       "defaultColor": "gray"
     },
@@ -106,6 +108,20 @@
         "email": " flagos@vampire.gr",
         "claim": true,
         "feedingGrounds": 4
+      },
+      "Βάθη - Εξάρχεια - Ομόνοια": {
+        "domainName": "Βάθη - Εξάρχεια - Ομόνοια",
+        "ownerName": "Όλγα Κεφαλογιάννη",
+        "email": " olgak@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 2
+      },
+      "Ακρόπολη και πέριξ": {
+        "domainName": "Ακρόπολη και πέριξ",
+        "ownerName": "Αγάπη Καλλιμάχη",
+        "email": " athens@vampire.gr",
+        "claim": true,
+        "feedingGrounds": 3
       }
     },
     "defaultPopupInfo": {
