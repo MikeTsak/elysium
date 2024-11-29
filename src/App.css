@@ -1,38 +1,157 @@
+/* Importing the Carrois Gothic SC font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Styling */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #181818; /* Dark background for header */
+  padding: 30px 20px;
+  color: #e0e0e0; /* Light text */
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Title */
+.app-header h1 {
+  margin: 0;
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  margin: 0;
+  font-size: 2rem; /* Larger font for the header */
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+/* View Toggle Button Styles */
+.view-toggle {
+  padding: 12px 25px; /* Adjusted padding for balance */
+  background-color: transparent; /* Transparent background */
+  color: #4CAF50; /* Green color for the text */
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 50px; /* Rounded button for a sleek look */
+  font-size: 1rem;
+  margin: 0px 0px 5px 0px;
+  cursor: pointer;
+  font-family: 'Carrois Gothic SC', sans-serif; /* Font for button */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  outline: none; /* Remove the default focus outline */
+}
+
+.view-toggle:hover {
+  background-color: #4CAF50; /* Green background on hover */
+  color: white; /* Change text color to white */
+  transform: scale(1.1); /* Slightly enlarge button on hover */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Soft green shadow for depth */
+}
+
+.view-toggle:active {
+  transform: scale(0.95); /* Slight shrink effect when clicked */
+}
+
+.view-toggle:focus {
+  border-color: #45a049; /* Focused state with slightly darker border */
+  outline: none;
+}
+
+/* Footer Styling */
+.app-footer {
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #181818;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.app-footer a {
+  color: #4CAF50; /* Green link color */
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Map and List View */
+.MapComponent, .ListComponent {
+  margin-top: 20px;
+}
+
+/* Ensure the map fills the container properly */
+.MapComponent {
+  height: 80vh; /* Full screen map */
+  width: 100%;
+}
+
+/* Minimalistic List View */
+.ListComponent {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  padding: 20px;
+  color: #e0e0e0;
+  list-style-type: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.ListComponent li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+.ListComponent li:hover {
+  background-color: #333; /* Slight hover effect for items */
+}
+
+.ListComponent h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4CAF50;
+}
+
+.ListComponent p {
+  font-size: 1rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .view-toggle {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .view-toggle {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

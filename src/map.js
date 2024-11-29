@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import domains from '../data/Domains.json'; // Static domains data or your GeoJSON file
 import axios from 'axios'; // If you're using axios for data fetching
+import './MapComponent.css'; // New CSS file for dark theme
 
 const MapComponent = () => {
   const [database, setDatabase] = useState(null);
@@ -80,17 +81,19 @@ const MapComponent = () => {
   };
 
   if (loading) {
-    return <div>Loading...</div>; // Loading state
+    return <div className="loading">Loading...</div>; // Dark themed loading
   }
 
   return (
-    <MapContainer center={[37.9902, 23.6813]} zoom={13} style={{ height: '80vh', width: '100%' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <GeoJSON data={domains} onEachFeature={onEachFeature} />
-    </MapContainer>
+    <div className="map-container">
+      <MapContainer center={[37.9902, 23.6813]} zoom={13} style={{ height: '80vh', width: '100%' }}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <GeoJSON data={domains} onEachFeature={onEachFeature} />
+      </MapContainer>
+    </div>
   );
 };
 
